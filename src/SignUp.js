@@ -24,7 +24,7 @@ const SignUp = () => {
         setName('');
         setEmail('');
         setPassword('');
-        navigate('/signin'); // Redirect to the Sign In page
+        navigate('/signin'); 
       }, 3000);
     } catch (error) {
       console.error('Sign Up Failed', error.message);

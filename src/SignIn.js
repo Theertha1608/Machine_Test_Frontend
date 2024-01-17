@@ -11,7 +11,7 @@ const SignIn = () => {
   const handleLogin = async () => {
     try {
       
-      const response = await axios.post('http://localhost:5050/signin', {
+      const response = await axios.post(`${process.env.REACT_APP_URL}/signin`, {
         email,
         password,
       });

@@ -49,7 +49,7 @@ const token=localStorage.getItem("token")
 
 const [userName,setUserName]=useState()
  useEffect(()=>{
-axios.get(`http://localhost:5050/get-single-user/${userId}`,{
+axios.get(`${process.env.REACT_APP_URL}/get-single-user/${userId}`,{
   headers:{
 
     Authorization:token
